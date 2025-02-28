@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question7</title>
+</head>
+<body
+    style="
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    "
+>
+    
+    <button 
+    
+    style="
+            height: 200px; 
+            width: 600px;
+            font-size: 60px; 
+            transition: 0.5s;
+    "
+    id="btn"
+    
+    > Button</button>
+
+    <script>
+        let button = document.getElementById("btn");
+        
+        button.addEventListener("mouseover" ,function(){
+            button.style.backgroundColor = "red";
+            button.style.borderStyle="dotted";
+            button.style.borderRadius="50%";
+        });
+
+        button.addEventListener("mouseout" ,function(){
+            button.style.backgroundColor = "blue";
+            button.style.borderStyle="solid";
+            button.style.borderRadius=0;
+            
+        });
+
+
+
+    </script>
+</body>
+</html>
