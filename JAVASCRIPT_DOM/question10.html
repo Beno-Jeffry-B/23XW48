@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 10</title>
+
+</head>
+<body>
+    <button style="position: absolute;">click me..</button>
+
+    <script>
+        var btn =  document.querySelector("button");
+        btn.addEventListener("click",function(){
+                const x = window.innerWidth
+                const y = window.innerHeight
+                var randX = Math.random()*x;
+                var randy = Math.random()*y;
+            btn.style.left = `${randX}px`
+            btn.style.top = `${randY}px`
+        })
+
+
+      
+    </script>
+</body>
+</html>
