@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question2</title>
+</head>
+<body>
+
+    <label for="input_val">enter the number:</label>
+    <input type="number" id="input_val">
+
+    <button id="add_element" onclick="add_element()">add_element</button>
+    <button id="Reverse" onclick="Reverse()">Reverse</button>
+    <h2 id="result"></h2>
+    <h2 id="Reversed_result"></h2>
+
+    <script>
+        let num_array = [];
+
+        function add_element(){
+            let input_val = document.getElementById("input_val").value;
+            if(input_val){
+                num_array.push(Number(input_val));
+                document.getElementById("result").textContent = `${num_array}`
+            }
+            else{
+                alert("please do enter the number :");
+            }
+        }
+
+        function Reverse(){
+            var rev = [];
+            var n = num_array.length;
+            for(let i = 0 ;i < n;i++){
+                rev[i] = num_array[n-i- 1 ];
+            }
+            document.getElementById("Reversed_result").textContent = `${rev}`
+        }
+
+    </script>
+</body>
+</html>
